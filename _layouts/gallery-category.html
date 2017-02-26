@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<h1>{{ page.category }} Photos</h1>
+<section class="grid">
+  <div class="col-12">
+    {% for photo in site.photos %}
+      {% if photo.category == page.category %}
+        <a target "#" href="leaves.jpg" class="hover-block {{ photo.kittens }}" style=" background-image: url({{ photo.image }});">
+
+          <div class="hover-content">
+            <h2>{{ photo.title }}</h2>
+          </div>
+        </a>
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>

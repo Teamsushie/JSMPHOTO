@@ -1,0 +1,298 @@
+/*css reset*/
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+/*universal styling*/
+
+img {
+  max-width:100%;
+  height:auto;
+  display:block;
+}
+
+section {padding:5%;}
+
+
+/*this is for the navbar*/
+
+a {
+  text-decoration: none;
+  background-position: center;
+}
+header {
+  background-color:black;
+  height: 60px;
+}
+header .nav-items {
+  display: flex;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+header a {
+  color: #ffffff;
+  background-color:black;
+  display: block;
+  padding: 0 25px;
+  line-height: 60px;
+}
+header a:hover {
+  background-color: #eb440e;
+  color: #fff;
+}
+
+/* Mobile nav toggle */
+.nav-button {
+  display: none;
+
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 30px;
+}
+@media (max-width: 50em) {
+  nav {
+    position: relative;
+  }
+  .nav-button {
+    display: block;
+  }
+  header .nav-items {
+    display: none;
+  }
+  .mobile-nav-active .nav-items {
+    display: block;
+    width: 100%;
+    text-align: right;
+    position: absolute;
+    top: 60px;
+    right: 0;
+  }
+}
+
+/*for images*/
+
+
+/*header and firsttouch*/
+
+.introvideo {
+  background-image: url(../images/thetower.jpg);
+  background-size:cover;
+  height:100vh;
+  background-position: center;
+}
+
+
+
+h1 {
+  color:#FEFCFF;
+  text-align: center;
+  font-family: 'Vollkorn', serif;
+  font-size:3rem;
+
+
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+
+}
+
+h3 {
+font-family: 'Vollkorn', serif;
+}
+
+p{
+
+}
+
+/*this is for the main nav bar*/
+
+.navbar {
+  position: fixed;
+}
+
+.top-banner h1 {
+  line-height: 80vh;
+  text-align:center;
+  border-width: medium;
+  border-style: groove;
+  border:50px;
+  border-color: grey;
+}
+
+.middle-banner {
+  background-image:url(../images/binding_light.png);
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/*portfolio background*/
+.end-banner {
+  background-color: black;
+
+}
+
+/** Blog **/
+.image-preview {
+  background-position: center;
+  background-size: cover;
+  min-height: 250px;
+
+}
+
+/*circles for gallery*/
+.circle {
+  height:90%;
+  width:100%;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.circle img {border-radius: 50%;
+  max-width: 100%;
+            height:auto;}
+
+
+/*this will make text appear when you hover over an image in the portfolio gallery*/
+
+.portrait {
+  height: 800px;
+}
+
+.landscape {
+  height:500px;
+}
+
+.hover-block {
+  position:relative;
+  display:block;
+  color:white;
+  min-height:100vh;
+  background-size:cover;
+  background-position:center center;
+}
+
+.hover-content {
+  position:absolute;
+  width:100%;
+  height:100%;
+  background-color:rgba(0, 0, 0, 0.5);
+  display: table;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.hover-block:hover .hover-content {
+  opacity: 1;
+}
+
+.hover-content h2 {
+  font-size:1.7rem;
+  text-align:center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* this is for the contact box at the bottom of the page pulled from https://www.sanwebe.com/2013/10/css-html-form-styles */
+
+/* #### Dark Matter #### */
+
+.dark-matter {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    background-image: url(../images/background.jpg);
+    background-size:cover;
+    background-position: center;
+    padding: 20px 30px 20px 30px;
+    font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #D3D3D3;
+    text-shadow: 1px 1px 1px #444;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+.dark-matter h1 {
+    padding: 0px 0px 10px 40px;
+    display: block;
+    border-bottom: 1px solid #444;
+    margin: -10px -30px 30px -30px;
+}
+.dark-matter h1>span {
+    display: block;
+    font-size: 11px;
+}
+.dark-matter label {
+    display: block;
+    margin: 0px 0px 5px;
+}
+.dark-matter label>span {
+    float: left;
+    width: 20%;
+    text-align: right;
+    padding-right: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.dark-matter input[type="text"], .dark-matter input[type="email"], .dark-matter textarea, .dark-matter select {
+    border: none;
+    color: #525252;
+    height: 25px;
+    line-height:15px;
+    margin-bottom: 16px;
+    margin-right: 6px;
+    margin-top: 2px;
+    outline: 0 none;
+    padding: 5px 0px 5px 5px;
+    width: 70%;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    background: #DFDFDF;
+}
+.dark-matter select {
+    background: #DFDFDF url('down-arrow.png') no-repeat right;
+    background: #DFDFDF url('down-arrow.png') no-repeat right;
+    appearance:none;
+    -webkit-appearance:none;
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    width: 70%;
+    height: 35px;
+    color: #525252;
+    line-height: 25px;
+}
+.dark-matter textarea{
+    height:100px;
+    padding: 5px 0px 0px 5px;
+    width: 70%;
+}
+.dark-matter .button {
+    background: #FFCC02;
+    border: none;
+    padding: 10px 25px 10px 25px;
+    color: #585858;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    text-shadow: 1px 1px 1px #FFE477;
+    font-weight: bold;
+    box-shadow: 1px 1px 1px #3D3D3D;
+    -webkit-box-shadow:1px 1px 1px #3D3D3D;
+    -moz-box-shadow:1px 1px 1px #3D3D3D;
+}
+
+.dark-matter .button:hover {
+    color: #333;
+    background-color: #EBEBEB;
+}
+
+/*styling for footer*/
