@@ -21,10 +21,11 @@ section {padding:5%;}
 a {
   text-decoration: none;
   background-position: center;
+  font-family: 'Quicksand', sans-serif;
 }
 header {
-  background-color:black;
-  height: 60px;
+  background-image: url(../images/nightscape.jpg);
+  height: 100px;
 }
 header .nav-items {
   display: flex;
@@ -99,12 +100,12 @@ h1 {
 }
 
 h2 {
-  font-family: 'Playfair Display', serif;
+font-family: 'Anonymous Pro', monospace;
 
 }
 
 h3 {
-font-family: 'Vollkorn', serif;
+font-family: 'Oswald', sans-serif;
 }
 
 p{
@@ -296,3 +297,20 @@ p{
 }
 
 /*styling for footer*/
+
+footer {
+  background-color: black;
+  border-radius: 10px;
+  color:white;
+      }
+
+/*background for about page*/
+.aboutback{
+  background-image: url(../images/highway.jpg);
+}
+
+/*background for recent thoughts*/
+.thoughtsback{
+  background-image: url(../images/thebeach.jpg);
+  background-position:top;
+}
