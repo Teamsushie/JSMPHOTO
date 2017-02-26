@@ -299,7 +299,7 @@ p{
 /*styling for footer*/
 
 footer {
-  background-color: black;
+  background-image: url(../images/nightscape.jpg);
   border-radius: 10px;
   color:white;
       }
